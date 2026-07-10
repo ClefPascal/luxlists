@@ -23,7 +23,8 @@ export default defineConfig(({ mode }) => {
         rollupOptions: {
           input: {
             main: path.resolve(__dirname, 'index.html'),
-            digpro: path.resolve(__dirname, 'digpro.html')
+            digpro: path.resolve(__dirname, 'digpro.html'),
+            payment: path.resolve(__dirname, 'payment.html')
           }
         }
       }
