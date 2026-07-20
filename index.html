@@ -79,7 +79,7 @@ body {
 
 /* ─── TICKER ─────────────────────────── */
 .ticker-wrap {
-  background: rgba(255, 255, 255, 0.88);
+  background: var(--purple);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   overflow: hidden;
@@ -87,7 +87,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 300;
-  border-bottom: 1px solid rgba(37, 99, 235, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 .ticker-track {
   display: flex;
@@ -95,7 +96,7 @@ body {
   white-space: nowrap;
 }
 .ticker-track span {
-  color: var(--purple2);
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 0.8px;
@@ -110,10 +111,10 @@ body {
   display: inline-block;
   width: 5px;
   height: 5px;
-  background: var(--gold);
+  background: #5EEAD4;
   border-radius: 50%;
   margin-right: 16px;
-  box-shadow: 0 0 8px var(--gold);
+  box-shadow: 0 0 8px #5EEAD4;
 }
 @keyframes ticker { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
 
